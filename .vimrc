@@ -51,7 +51,6 @@ syntax on
 set cursorline
 " Make tabs as wide as two spaces
 set tabstop=2
-set list
 " Highlight searches
 set hlsearch
 " Ignore case of searches
@@ -103,3 +102,6 @@ endif
 
 filetype plugin indent on
 syntax enable
+
+
+# Test
