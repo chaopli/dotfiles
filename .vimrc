@@ -104,3 +104,4 @@ filetype plugin indent on
 syntax enable
 set sw=4
 set tabstop=4
+let g:tex_flavor='latex'
