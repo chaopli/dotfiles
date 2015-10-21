@@ -102,3 +102,5 @@ endif
 
 filetype plugin indent on
 syntax enable
+set sw=4
+set tabstop=4
