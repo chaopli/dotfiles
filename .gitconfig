@@ -170,3 +170,6 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+[user]
+	name = Chao Li
+	email = lichaorodxx@gmail.com
