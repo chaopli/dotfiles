@@ -1,16 +1,17 @@
-" Use the Solarized Dark theme
-
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'klen/python-mode'
 Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
+" Enable syntax highlighting
+syntax enable
 set background=dark
 colorscheme solarized
-let g:solarized_termtrans=1
+" let g:solarized_termtrans=1
 
 " Make Vim more useful
 set nocompatible
@@ -45,12 +46,8 @@ set backupskip=/tmp/*,/private/tmp/*
 
 " Enable line numbers
 set number
-" Enable syntax highlighting
-syntax on
 " Highlight current line
 set cursorline
-" Make tabs as wide as two spaces
-set tabstop=2
 " Highlight searches
 set hlsearch
 " Ignore case of searches
@@ -105,3 +102,6 @@ syntax enable
 set sw=4
 set tabstop=4
 let g:tex_flavor='latex'
+set foldlevelstart=20
+let g:pymode_rope_completion = 0
+let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
