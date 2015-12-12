@@ -172,4 +172,12 @@
 	insteadOf = "gist:"
 [user]
 	name = Chao Li
-	email = lichaorodxx@gmail.com
+	email = cli@avinetworks.com
+[http]
+	sslVerify = false
+[push]
+	default = current
+[url "https://"]
+	insteadOf = git://
+[credential]
+	helper = cache --timeout=10800

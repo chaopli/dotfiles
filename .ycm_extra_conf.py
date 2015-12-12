@@ -37,7 +37,7 @@ import ycm_core
 flags = [
 '-Wall',
 '-Wextra',
-'-Werror',
+#'-Werror',
 '-Wc++98-compat',
 '-Wno-long-long',
 '-Wno-variadic-macros',
@@ -53,21 +53,39 @@ flags = [
 # For a C project, you would set this to something like 'c99' instead of
 # 'c++11'.
 '-std=c++11',
+'-stdlib=libc++',
 # ...and the same thing goes for the magic -x option which specifies the
 # language that the files to be compiled are written in. This is mostly
 # relevant for c++ headers.
 # For a C project, you would set this to 'c' instead of 'c++'.
 '-x',
 'c++',
-'-I',
+# '-isystem',
+# '/usr/include/c++/4.8/',
+'-isystem',
 '/usr/local/include/',
-'-I',
+'-isystem',
 '/usr/include/clang/3.4/include/',
-'-I',
+'-isystem',
 '/usr/include/c++/4.8.4/',
+'-isystem',
+'/usr/include/x86_64-linux-gnu/c++/4.8/',
+'-isystem',
+'/usr/include/',
 '-I',
-'/usr/include'
+'/home/chao/Workspace/chao-avi-dev/infrastructure/',
+'-I',
+'/home/chao/Workspace/chao-avi-dev/',
+'-I',
+'/home/chao/Workspace/chao-avi-dev/service_engine/include/',
+'-I',
+'/home/chao/Workspace/chao-avi-dev/service_engine/logagent/',
+'-I',
+'/home/chao/Workspace/chao-avi-dev/protobuf/cpp_gen/api/',
+'-I',
+'/home/chao/Workspace/chao-avi-dev/protobuf/cpp_gen/rpc/'
 ]
+
 
 
 # Set this to the absolute path to the folder (NOT the file!) containing the
@@ -82,10 +100,7 @@ flags = [
 # 'flags' list of compilation flags. Notice that YCM itself uses that approach.
 compilation_database_folder = ''
 
-if os.path.exists( compilation_database_folder ):
-  database = ycm_core.CompilationDatabase( compilation_database_folder )
-else:
-  database = None
+database = None
 
 SOURCE_EXTENSIONS = [ '.cpp', '.cxx', '.cc', '.c', '.m', '.mm' ]
 

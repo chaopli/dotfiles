@@ -37,3 +37,12 @@ if type _git &> /dev/null && [ -f /usr/local/etc/bash_completion.d/git-completio
 	complete -o default -o nospace -F _git g;
 fi;
 eval `dircolors $HOME/.dircolors`
+function distmake
+{
+	export DISTCC_HOSTS=`cat /mnt/builds/khaltore/distcc-hosts | sed s/"10.10.22.25"/"localhost"/g`
+	CC='distcc gcc' CXX='dist g++' make -j$(distcc -j) && make install_avi
+}
+function distcmake
+{
+	CC='distcc gcc' CXX='distcc g++' cmake ..
+}
