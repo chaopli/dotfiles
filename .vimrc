@@ -6,6 +6,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'klen/python-mode'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'plasticboy/vim-markdown'
 call vundle#end()
 " Enable syntax highlighting
 syntax enable
@@ -104,4 +105,4 @@ set tabstop=4
 let g:tex_flavor='latex'
 set foldlevelstart=20
 let g:pymode_rope_completion = 0
-let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
+let g:ycm_global_ycm_extra_conf = "~/.ycm_extra_conf.py"
