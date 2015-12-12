@@ -26,3 +26,5 @@ export MANPAGER='less -X';
 
 # Always enable colored `grep` output.
 export GREP_OPTIONS='--color=auto';
+export PYTHONPATH='/home/chao/Workspace/avi-dev/python/lib/'
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:'/usr/local/lib/'
