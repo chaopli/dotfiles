@@ -7,6 +7,15 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'klen/python-mode'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'chazy/cscope_maps'
+Plugin 'LucHermitte/lh-vim-lib'
+Plugin 'LucHermitte/lh-tags'
+Plugin 'LucHermitte/lh-dev'
+Plugin 'LucHermitte/lh-brackets'
+"Plugin 'LucHermitte/searchInRuntime'
+"Plugin 'LucHermitte/mu-template'
+"Plugin 'tomtom/stakeholders_vim'
+"Plugin 'LucHermitte/lh-cpp'
 call vundle#end()
 " Enable syntax highlighting
 syntax enable
@@ -74,7 +83,7 @@ set title
 " Show the (partial) command as it's being typed
 set showcmd
 " Start scrolling three lines before the horizontal window border
-set scrolloff=3
+set scrolloff=2
 
 " Strip trailing whitespace (,ss)
 function! StripWhitespace()
@@ -113,3 +122,6 @@ nnoremap <Leader>g :YcmCompleter GoTo <Enter>
 vmap "+y :!xclip -f -sel clip
 map "+p :r!xclip -o -sel clip
 set expandtab
+"source ~/.vim/bundle/cscope_maps/plugin/cscope_maps.vim
+imap <C-J>      <Plug>MarkersJumpF
+map <C-J>      <Plug>MarkersJumpF

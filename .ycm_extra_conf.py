@@ -38,7 +38,7 @@ flags = [
 '-Wall',
 '-Wextra',
 #'-Werror',
-'-Wc++98-compat',
+#'-Wc++98-compat',
 '-Wno-long-long',
 '-Wno-variadic-macros',
 '-fexceptions',
@@ -73,18 +73,25 @@ flags = [
 '-isystem',
 '/usr/include/',
 '-I',
-'/home/chao/Workspace/chao-avi-dev/infrastructure/',
+'/usr/local/include/',
 '-I',
-'/home/chao/Workspace/chao-avi-dev/',
+'/home/chao/Workspace/chao-eng-logs/infrastructure/',
 '-I',
-'/home/chao/Workspace/chao-avi-dev/service_engine/include/',
+'/home/chao/Workspace/chao-eng-logs/',
 '-I',
-'/home/chao/Workspace/chao-avi-dev/service_engine/logagent/',
+'/home/chao/Workspace/chao-eng-logs/service_engine/include/',
 '-I',
-'/home/chao/Workspace/chao-avi-dev/protobuf/cpp_gen/api/',
+'/home/chao/Workspace/chao-eng-logs/service_engine/logagent/',
 '-I',
-'/home/chao/Workspace/chao-avi-dev/protobuf/cpp_gen/rpc/'
+'/home/chao/Workspace/chao-eng-logs/protobuf/cpp_gen/api/',
+'-I',
+'/home/chao/Workspace/chao-eng-logs/protobuf/cpp_gen/rpc/',
+'-I',
+'/home/chao/Workspace/chao-eng-logs/protobuf/cpp_gen/events/',
+'-I',
+'/home/chao/Workspace/chao-eng-logs/build/service_engine/dpdk/include/'
 ]
+
 
 
 
